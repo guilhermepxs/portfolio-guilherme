@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #121936;
+    --text: black;
+    --secondary-text-color: #333;
+    --tertiary-text-color: #666;
+    --button-whatsapp: #25d366;
+    --button-github: black;
+    --header-background: white;
+    --button: white;
+}
+
+.dark-theme {
+    --background-color: #121212;
+    --text-color: #f4f4f4;
+    --text: white;
+    --secondary-text-color: #ccc;
+    --tertiary-text-color: #999;
+    --button-whatsapp: #1ebd58;
+    --button-github: #444;
+    --header-background: #1a1a1a;
+    --button:   black;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Euclid Circular A", "Poppins";
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--header-background);
+    padding: 40px 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+
+    & button,
+    img {
+        border: none;
+        z-index: 10;
+        background-color: transparent;
+        overflow: visible;
+        display: block;
+    }
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    padding: 50px 100px;
+    background-color: var(--header-background);
+}
+
+.content {
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 48px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.welcome {
+    font-size: 36px;
+    color: var(--secondary-text-color);
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 24px;
+    color: var(--tertiary-text-color);
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.btn.whatsapp {
+    background-color: var(--button-whatsapp);
+    color: white;
+}
+
+.btn.github {
+    background-color: var(--button-github);
+    color: white;
+}
+
+.btn svg {
+    margin-right: 10px;
+}
+
+.profile-picture img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.recent-posts {
+    background-color: var(--background-color);
+    padding: 50px 100px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: bold;
+    width: 40%;
+}
+
+.section-header .view-all {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: bold;
+    width: 40%;
+    text-align: right ;
+}
+
+.posts {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.post {
+    background-color: var(--header-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-height: 300px;
+    max-width: 40%;
+}
+
+.post h3 {
+    color: var(--text-color);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.date-role {
+    font-size: 14px;
+    color: var(--secondary-text-color);
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 16px;
+    color: var(--tertiary-text-color);
+}
+
+.recent-projects {
+    padding: 50px 100px;
+    background-color: var(--header-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.recent-projects h2 {
+    font-size: 24px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    max-width: 1450px;
+    border-bottom: solid 1px #333;
+}
+
+.project img {
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project-details {
+    flex-grow: 1;
+}
+
+.project h3 {
+    color: var(--text-color);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-year {
+    font-size: 14px;
+    color: var(--secondary-text-color);
+    margin-bottom: 10px;
+}
+
+.project .description {
+    font-size: 16px;
+    color: var(--tertiary-text-color);
+}
+
+.project .description a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.project .description a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--header-background);
+    margin-top: 50px;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.footer .social-icons a svg {
+    width: 40px;
+    height: 40px;
+    fill: var(--text-color);
+}
+
+.footer p {
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer p svg {
+    vertical-align: middle;
+    margin-right: 10px;
+    fill: var(--secondary-text-color);
+}
+
+.habilidade h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--secondary-text-color);
+}
+
+#habilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.habilidade p {
+    margin-bottom: 10px;
+    color: var(--tertiary-text-color);
+}
+
+.date {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.difficulty {
+    color: var(--tertiary-text-color);
+}
+
+.habilidade {
+    padding: 20px;
+    background-color: var(--header-background);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    max-width: 1450px;
+    width: 100%;
+}
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+
+    & form{
+        width: 100%;
+        max-width: 1000px;
+        background-color: var(--header-background);
+        padding: 40px;
+        border-radius: 20px;
+    }
+
+    & h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: var(--text);
+        animation: fadeIn 1s ease-in-out;
+    }
+    
+    & label {
+        display: block;
+        margin: 15px 0 5px 0;
+        color: var(--secondary-text-color);
+    }
+    
+    & input, textarea {
+        resize: none;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        background-color: var(--background-color);
+
+    }
+    
+    & input:focus, textarea:focus {
+        border-color: var(--text-color);
+    }
+    
+    & button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--button-whatsapp);
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    & button:hover {
+        background-color: var(--text-color);
+    }
+    
+    & .error-message {
+        color: red;
+        display: none;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header nav ul {
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 20px;
+        height: 75vh;
+    }
+
+    .content {
+        max-width: 100%;
+    }
+
+    .buttons {
+        justify-content: center;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .profile-picture img {
+        margin-top: 20px;
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .welcome {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .recent-posts {
+        padding: 20px;
+    }
+
+    .posts {
+        flex-direction: column;
+    }
+
+    .post {
+        max-width: 100%;
+    }
+
+    .recent-projects {
+        padding: 20px;
+    }
+
+    .project {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project img {
+        margin-bottom: 15px;
+    }
+
+    
+    .habilidades h1 {
+        text-align: center;
+    }
+
+    .habilidade {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 15px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+    }
+
+    .profile-picture img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .welcome {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .habilidades h1 {
+        font-size: 1.8rem;
+    }
+
+    .habilidade h2 {
+        font-size: 1.2rem;
+    }
+}
